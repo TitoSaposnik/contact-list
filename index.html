@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!--Iconos google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Estilos Css-->
+    <link rel="stylesheet" href="/css/styles.css">
     <title>Agenda de Contacto</title>
 </head>
 <body>
-    
+    <main class="container">
+        <section>
+            <h2>agenda de contactos</h2>
+        </section>
+
+        <!-- formulario de datos-->
+        <section class="formulario-datos">
+            <input type="text" class="nombre" placeholder="nombre">
+            <input type="text" class="numero" placeholder="numero">
+            <input type="text" class="direccion" placeholder="direccion">
+            <button class="btn-agregar-tarea">Agendar</button>
+
+            <!--listado de tareas-->
+            <div class="listado-tarea">
+                <div class="tarea">
+                    <h3>nombre</h3>
+                    <p>numero</p>
+                    <p>direccion</p>
+                    <span class="material-icons icono">
+                        delete_forever
+                        </span>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
