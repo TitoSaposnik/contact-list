@@ -54,7 +54,7 @@ body{
     color: #090910;
     cursor: pointer;
 }
-.listado-tarea{
+.listado-tareas{
     display: flex;
     flex-direction: column;
 }
