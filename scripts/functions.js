@@ -1,18 +1,20 @@
 const guardarContacto = (db,contacto) =>{
     db.setItem(contacto.id, JSON.stringify(contacto))///con el stringify podremos ver los objetos
     window.location.href = "/" //se limpia el formulario, redireccionando.
+
 }
 
-const cargarContactos = (db, parentNode) =>{
+const cargarContactos = (db,parentNode) =>{
     let claves = Object.keys(db)
 
     for(clave of claves){
         let contacto = JSON.parse(db.getItem(clave))
-        crearContacto(parentNode, contacto,db)
+        crearContacto(parentNode,contacto,db)
     }
 }
 
-const crearContacto = (parentNode, contacto, db) =>{
+const crearContacto = (parentNode,contacto,db) =>{
+
     let divContacto = document.createElement("div")
     let nombreContacto = document.createElement("h3")
     let numeroContacto = document.createElement ("p")
